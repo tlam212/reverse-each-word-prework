@@ -8,7 +8,8 @@ def reverse_each_word(str)
 end
 
 def reverse_each_word(str)
+  new_str = []
   str.split.collect do |word|
-    word.reverse.join(' ')
+    new_str << word.reverse.join(' ')
   end
 end
